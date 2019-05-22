@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+    - name: restart tomcat
+      systemd:
+        name: tomcat
+        state: restarted
