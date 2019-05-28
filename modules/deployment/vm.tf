@@ -38,17 +38,17 @@ resource "azurerm_virtual_machine" "tomcat" {
   }
 
   provisioner "file" {
-    source      = "./tomcat.yml"
+    source      = "./modules/deployment/tomcat.yml"
     destination = "/home/${var.username_tomcat_vm}/tomcat.yml"
   }
 
   provisioner "file" {
-    source      = "./tomcatrestart.yml"
+    source      = "./modules/deployment/tomcatrestart.yml"
     destination = "/home/${var.username_tomcat_vm}/tomcatrestart.yml"
   }
 
   provisioner "file" {
-    source      = "./tomcat"
+    source      = "./modules/deployment/tomcat"
     destination = "/home/${var.username_tomcat_vm}/"
   }
 
