@@ -15,5 +15,5 @@ output "tomcat_link" {
 }
 
 output "details" {
-  value = "This is the link to open tomcat, username and password for you manage apps in tomcat are 'ansible' 'password' "
+  value = "This is the link to open tomcat, username and password for you manage apps in tomcat are 'ansible' 'passwd' "
 }
